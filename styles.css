@@ -58,7 +58,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 20%;
+  width: 29.5%;
   padding: 0 3rem;
   max-width: 20rem;
 }
@@ -68,7 +68,7 @@ html {
   transform: rotate(30.5deg);
   border-radius: 50%;
   padding: 0.8rem;
-  width: 40%;
+  /* width: 40%; */
   /* height: 40%; */
   position: relative;
 
@@ -76,7 +76,7 @@ html {
 }
 
 .header-logos img {
-  transform: rotate(-30.5deg);
+  /* transform: rotate(-30.5deg); */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -97,7 +97,7 @@ html {
   color: #ffffff;
 
   border-radius: 0px 158px 0px 0px;
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 .get-in-touch {
   width: 50%;
@@ -109,7 +109,7 @@ html {
 .get-in-touch h3 {
   font-family: "Playfair Display";
   font-size: 2rem;
-  line-height: 42px;
+  line-height: 159.3%;
   letter-spacing: 0.01em;
 
   text-align: left;
@@ -122,8 +122,8 @@ html {
   font-size: 1.2rem;
   line-height: 159.3%;
   text-align: left;
-  width: 60%;
-  max-width: 200px;
+  width: 90%;
+  max-width: 400px;
   /* or 25px */
 
   letter-spacing: 0.02em;
@@ -214,7 +214,7 @@ html {
   font-weight: 300;
   font-size: 2rem;
   line-height: 110.8%;
-  margin: 1.5rem;
+  margin: 0.5rem;
 }
 
 .testimonials p {
@@ -273,7 +273,183 @@ html {
   width: 20%;
 }
 
+/*third-section*/
+
+.third-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-item: flex-start;
+  padding: 1rem;
+}
+
+.third-section-image {
+  width: 50%;
+
+  padding: 0.1rem;
+  margin: 1rem auto;
+}
+
+.circle {
+  border: 1px dashed #000000;
+  border-radius: 50%;
+  width: 14rem;
+  height: 14rem;
+  position: absolute;
+  z-index: 0;
+}
+
+.yellow-color {
+  width: 45%;
+  height: 29%;
+  position: absolute;
+  z-index: 1;
+}
+
+.mask-group {
+  width: 57%;
+  height: 53%;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+
+.about-us {
+  width: 50%;
+  padding: 1rem;
+}
+
+.about-us p {
+  font-family: "Hind Vadodara";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 146.3%;
+
+  letter-spacing: 0.02em;
+
+  color: rgba(51, 27, 59, 0.66);
+}
+
+.explore-button {
+  margin: 1rem auto;
+  background: #331b3b;
+  border-radius: 0.6rem;
+  border: none;
+  width: 70%;
+  color: #ffffff;
+  font-family: "Hind Vadodara";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 137.3%;
+  padding: 0.8rem;
+}
+
+.about-us h1 {
+  font-family: "Hind Vadodara";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 106.3%;
+
+  color: #331b3b;
+}
+
+.about-us h2 {
+  font-family: "Hind Vadodara";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 106.3%;
+  color: #331b3b;
+}
+
+/*first-section*/
+
+.first-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.get-started {
+  width: 50%;
+  padding: 1rem;
+  /* max-width: 400px; */
+  font-family: "Hind Vadodara";
+  font-style: normal;
+}
+
+.get-started p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 146.3%;
+  /* or 25px */
+
+  letter-spacing: 0.02em;
+}
+
+.get-started h2 {
+  font-weight: 300;
+  font-size: 3rem;
+  line-height: 99.8%;
+}
+
+.get-started span {
+  font-weight: 700;
+}
+
+.get-started button {
+  margin: 1rem auto;
+  background: #331b3b;
+  border-radius: 0.6rem;
+  border: none;
+  width: 70%;
+  color: #ffffff;
+  font-family: "Hind Vadodara";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 137.3%;
+  padding: 0.8rem;
+}
+
+.what-we-do {
+  width: 80%;
+  margin: 1rem auto;
+}
+.what-we-do p {
+  font-family: "Hind Vadodara";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 146.3%;
+  text-align: center;
+}
+
+.what-we-do span {
+  font-weight: 700;
+}
+
+.card-carousel {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.second-sec-image {
+  width: 40%;
+  box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
 @media (max-width: 1920px) and (min-width: 426px) {
+  html {
+    font-size: 58.5%;
+  }
   .navbar ul li {
     max-width: 10rem;
     font-size: 1.3rem;
@@ -306,6 +482,10 @@ html {
     position: relative;
 
     display: inline-block;
+  }
+
+  .logo-img {
+    transform: rotate(-30.5deg);
   }
 
   .header-logos img {
@@ -348,5 +528,124 @@ html {
 
   .fifth-section {
     padding: 3rem 3rem;
+  }
+
+  .explore-button {
+    margin: 1rem auto;
+    background: #331b3b;
+    border-radius: 0.6rem;
+    border: none;
+    width: 30%;
+    color: #ffffff;
+    font-family: "Hind Vadodara";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 137.3%;
+    /* or 23px */
+
+    letter-spacing: 0.02em;
+    padding: 1.5rem;
+  }
+
+  .about-us h2 {
+    font-size: 2.8rem;
+  }
+
+  .about-us h1 {
+    font-size: 3.2rem;
+  }
+
+  .about-us p {
+    font-size: 1.4rem;
+  }
+
+  .mask-group {
+    width: 58%;
+    /* height: 55%; */
+    height: auto;
+    top: -127px;
+    left: -29px;
+    /* right: 130px;
+    /* right: 130px; */
+  }
+
+  .yellow-color {
+    width: 45%;
+    height: auto;
+    display: block;
+  }
+  .circle {
+    width: 44%;
+    height: 68%;
+  }
+
+  .third-section {
+    align-items: center;
+    padding-left: 5rem;
+  }
+
+  .third-section-image {
+    width: 65%;
+    height: 64vh;
+    padding: 4rem auto;
+  }
+
+  .about-us {
+    padding: 5rem;
+    width: 35%;
+  }
+
+  .get-started {
+    padding: 4rem;
+  }
+  .get-started p {
+    font-weight: 400;
+    font-size: 1.7rem;
+    line-height: 146.3%;
+    /* or 25px */
+
+    letter-spacing: 0.02em;
+  }
+
+  .get-started h2 {
+    font-weight: 300;
+    font-size: 6rem;
+    line-height: 99.8%;
+  }
+
+  .get-started span {
+    font-weight: 700;
+  }
+  .get-started button {
+    margin: 1rem auto;
+    background: #331b3b;
+    border-radius: 0.6rem;
+    border: none;
+    width: 30%;
+    color: #ffffff;
+    font-family: "Hind Vadodara";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 137.3%;
+    padding: 1.2rem;
+  }
+
+  .what-we-do {
+    width: 29%;
+    margin: 1rem auto;
+  }
+  .what-we-do p {
+    font-family: "Hind Vadodara";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6rem;
+    line-height: 146.3%;
+    text-align: center;
+  }
+
+  .what-we-do span {
+    font-weight: 700;
   }
 }
