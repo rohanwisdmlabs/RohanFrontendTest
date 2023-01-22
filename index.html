@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="C:\Users\Rohan Ray\Desktop\RohanHtml&CSSTest\styles.css"
-      rel="stylesheet"
-    />
+    <link href="./styles.css" type="text/css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,6 +23,8 @@
       href="https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <title>Html/Css Assignment</title>
   </head>
   <body>
@@ -44,21 +43,21 @@
           <a href="https://www.instagram.com/"
             ><img
               class="logo-img"
-              src="C:\Users\Rohan Ray\Desktop\RohanHtml&CSSTest\logos\12967496761553233092 (1) 2.png"
+              src=".\logos\12967496761553233092 (1) 2.png"
               width="15px"
               height="15px"
           /></a>
           <a href="https://www.linkedin.com/login"
             ><img
               class="logo-img"
-              src="C:\Users\Rohan Ray\Desktop\RohanHtml&CSSTest\logos\14459920111530103316 2.png"
+              src=".\logos\14459920111530103316 2.png"
               width="15px"
               height="15px"
           /></a>
           <a href="https://www.facebook.com/"
             ><img
               class="logo-img"
-              src="C:\Users\Rohan Ray\Desktop\RohanHtml&CSSTest\logos\16304616191553750378 2.png"
+              src=".\logos\16304616191553750378 2.png"
               width="15px"
               height="15px"
           /></a>
@@ -77,18 +76,22 @@
 
         <button class="get-started button" type="button">GET STARTED</button>
       </div>
-      <div class="first-section-image"></div>
+      <div class="first-section-image">
+        <div>
+          <img class="img1" src=".\logos\rectangles\Mask Group (2).png" />
+          <img class="img2" src=".\logos\rectangles\Vector 9.png" />
+        </div>
+      </div>
     </section>
     <section class="second-section">
+      <div class="overlay"></div>
       <div class="what-we-do">
         <p><span>What We Do</span> For Your Business</p>
       </div>
       <div class="card-carousel">
         <div class="second-sec-card">
-          <div class="image-icon">
-            <img
-              src="C:\Users\Rohan Ray\Desktop\RohanHtml&CSSTest\logos\rectangles\website-4943 1.png"
-            />
+          <div class="image-icon color-1">
+            <img class="icon" src=".\logos\rectangles\website-4943 1.png" />
           </div>
           <div>
             <h6>Website Design</h6>
@@ -99,10 +102,8 @@
           </div>
         </div>
         <div class="second-sec-card">
-          <div class="image-icon">
-            <img
-              src="C:\Users\Rohan Ray\Desktop\RohanHtml&CSSTest\logos\rectangles\computer-6823 1.png"
-            />
+          <div class="image-icon color-2">
+            <img class="icon" src=".\logos\rectangles\computer-6823 1.png" />
           </div>
           <div>
             <h6>Web Developement</h6>
@@ -113,9 +114,10 @@
           </div>
         </div>
         <div class="second-sec-card">
-          <div class="image-icon">
+          <div class="image-icon color-3">
             <img
-              src="C:\Users\Rohan Ray\Desktop\RohanHtml&CSSTest\logos\rectangles\mobile-phone-1164 1.png"
+              class="icon"
+              src=".\logos\rectangles\mobile-phone-1164 1.png"
             />
           </div>
           <div>
@@ -127,10 +129,8 @@
           </div>
         </div>
         <div class="second-sec-card">
-          <div class="image-icon">
-            <img
-              src="C:\Users\Rohan Ray\Desktop\RohanHtml&CSSTest\logos\rectangles\rocket-3429 1.png"
-            />
+          <div class="image-icon color-4">
+            <img class="icon" src=".\logos\rectangles\rocket-3429 1.png" />
           </div>
           <div>
             <h6>Marketing</h6>
@@ -142,17 +142,11 @@
         </div>
       </div>
     </section>
-    <!-- <section class="third-section">
+    <section class="third-section">
       <div class="third-section-image">
         <div class="circle"></div>
-        <img
-          class="yellow-color"
-          src="C:\Users\Rohan Ray\Desktop\RohanHtml&CSSTest\logos\rectangles\Vector 9.png"
-        />
-        <img
-          class="mask-group"
-          src="C:\Users\Rohan Ray\Desktop\RohanHtml&CSSTest\logos\rectangles\Mask Group.png"
-        />
+        <img class="yellow-color" src=".\logos\rectangles\Vector 9.png" />
+        <img class="mask-group" src=".\logos\rectangles\Mask Group.png" />
       </div>
       <div class="about-us">
         <h1>About Us</h1>
@@ -171,7 +165,7 @@
         </p>
         <button class="explore-button" type="button">Explore More</button>
       </div>
-    </section> -->
+    </section>
     <section class="fourth-section"></section>
     <section class="fifth-section">
       <div class="testimonials">
@@ -179,9 +173,7 @@
       </div>
       <div class="info-Card">
         <div class="card">
-          <img
-            src="C:\Users\Rohan Ray\Desktop\RohanHtml&CSSTest\logos\rectangles\19399522241579780463 1.png"
-          />
+          <img src=".\logos\rectangles\19399522241579780463 1.png" />
           <p>
             Lorem Ipsum has been the industry's standard dummy text ever since
             the 1500s, when an unknown printer took a galley of type and
@@ -191,9 +183,7 @@
           <p>- UI Soup</p>
         </div>
         <div class="card">
-          <img
-            src="C:\Users\Rohan Ray\Desktop\RohanHtml&CSSTest\logos\rectangles\19399522241579780463 1.png"
-          />
+          <img src=".\logos\rectangles\19399522241579780463 1.png" />
           <p>
             Lorem Ipsum has been the industry's standard dummy text ever since
             the 1500s, when an unknown printer took a galley of type and
@@ -219,10 +209,7 @@
         </div>
       </div>
       <div class="map-image">
-        <img
-          class="map-photo"
-          src="C:\Users\Rohan Ray\Desktop\RohanHtml&CSSTest\logos\rectangles\Rectangle 42.png"
-        />
+        <img class="map-photo" src=".\logos\rectangles\Rectangle 42.png" />
 
         <div class="map-info">
           <p>Texas</p>
@@ -231,5 +218,15 @@
         </div>
       </div>
     </section>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
