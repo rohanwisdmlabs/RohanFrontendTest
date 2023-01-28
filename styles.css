@@ -318,6 +318,7 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border-radius: 30%;
 }
 
 .about-us {
@@ -373,6 +374,19 @@ html {
 
 /*first-section*/
 
+.starting {
+  display: flex;
+  padding: 2em;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* #city {
+  width: 107%;
+  padding: 5px;
+  font-size: 3rem;
+  border-radius: 3px;
+} */
 .first-section {
   display: flex;
   align-items: center;
@@ -412,7 +426,7 @@ html {
   background: #331b3b;
   border-radius: 0.6rem;
   border: none;
-  width: 70%;
+  width: 107%;
   color: #ffffff;
   font-family: "Hind Vadodara";
   font-style: normal;
@@ -420,6 +434,11 @@ html {
   font-size: 1.2rem;
   line-height: 137.3%;
   padding: 0.8rem;
+}
+
+.button-rentals {
+  text-decoration: none;
+  color: white;
 }
 
 .what-we-do {
@@ -448,7 +467,7 @@ html {
 .overlay {
   height: 92%;
   width: 93%;
-  background-color: #ecf7ff;
+  background-color: rgb(195 149 129);
   position: absolute;
   z-index: -1;
   border-top-right-radius: 40rem;
@@ -462,7 +481,7 @@ html {
 .overlay-right {
   height: calc(100% - 6rem);
   width: 93%;
-  background-color: rgba(255, 222, 212, 0.3);
+  background-color: rgb(243 171 72 / 68%);
   position: absolute;
   z-index: -1;
   border-top-left-radius: 40rem;
@@ -583,8 +602,9 @@ html {
 }
 
 .img1 {
-  width: 87%;
+  width: 100%;
   position: absolute;
+  border-radius: 45%;
   left: -10px;
   z-index: 2;
   top: -37px;
@@ -815,10 +835,17 @@ html {
     left: 63px;
   }
   .img1 {
-    width: 74%;
     position: absolute;
     z-index: 2;
-    top: -113px;
-    left: 47px;
+    top: -124px;
+    left: -33px;
+    border-radius: 47%;
+  }
+
+  #city {
+    width: 50%;
+    padding: 5px;
+    font-size: 3rem;
+    border-radius: 3px;
   }
 }
