@@ -15,12 +15,3 @@ $(document).ready(function () {
     variableWidth: true,
   });
 });
-
-let city = "";
-let nameOfCompany = "";
-
-function getCity() {
-  fetch("http://api.citybik.es/v2/networks")
-    .then((response) => response.json())
-    .then((data) => console.log(data));
-}

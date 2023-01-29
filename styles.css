@@ -849,3 +849,31 @@ html {
     border-radius: 3px;
   }
 }
+
+/* rentals */
+
+.container-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* .Cname {
+  border: 2px solid black;
+  padding: 2px;
+  font-size: 1.2rem;
+  line-height: 1rem;
+} */
+
+.box-value {
+  font-size: 3rem;
+  padding: 2rem;
+  -webkit-box-shadow: inset 3px 6px 49px -3px rgba(0, 0, 0, 0.77);
+  -moz-box-shadow: inset 3px 6px 49px -3px rgba(0, 0, 0, 0.77);
+  box-shadow: inset 3px 6px 49px -3px rgba(0, 0, 0, 0.77);
+  width: 97vw;
+  margin: 1rem;
+  border-radius: 4rem;
+  overflow: hidden;
+}
