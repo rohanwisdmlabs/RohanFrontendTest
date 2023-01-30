@@ -1,5 +1,5 @@
-window.onload = function () {
-  fetch("http://api.citybik.es/v2/networks")
+window.onload = async function () {
+  await fetch("http://api.citybik.es/v2/networks")
     .then((response) => response.json())
     .then(function (data) {
       console.log(data.networks);
