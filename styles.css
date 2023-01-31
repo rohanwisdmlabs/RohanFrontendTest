@@ -877,3 +877,77 @@ html {
   border-radius: 4rem;
   overflow: hidden;
 }
+
+/*form*/
+
+.containers {
+  display: flex;
+  justify-content: space-between;
+}
+
+.containers img {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: -700px;
+  overflow: hidden;
+  opacity: 0.8;
+}
+
+.show-data {
+  max-width: 500px;
+  width: 50%;
+  border: 2px solid black;
+  margin: 69px auto;
+  padding: 74px;
+}
+
+.form {
+  width: 50%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 69px auto;
+  padding: 40px;
+  border: 2px solid black;
+}
+
+.labels {
+  font-size: 30px;
+  font-family: "Hind Vadodara";
+  line-height: 1.7em;
+  font-weight: 800;
+  color: whitesmoke;
+}
+
+.paragraph {
+  font-size: 25px;
+  font-family: "Hind Vadodara";
+  line-height: 1.7em;
+  font-weight: 800;
+}
+
+input {
+  width: 100%;
+  font-size: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  line-height: 0.8em;
+  font-weight: 400;
+  border: 4px solid rgba(0, 0, 0, 0.25);
+  border-radius: 15px 50px 30px 5px;
+  padding: 3px;
+  color: rgb(237, 191, 191);
+  background: none;
+}
+
+.btn-submit {
+  border-radius: 15px 50px 30px 5px;
+  width: 37%;
+  font-size: 28px;
+  padding: 4px;
+  margin: 5px;
+  font-family: fangsong;
+  font-weight: 700;
+}

@@ -52,14 +52,36 @@ async function myFunction(a, b) {
   let obj = await value.json();
 
   let pos1 = cities.get(a);
-  let long1;
+
   long1 = obj[`${pos1}`].long;
-  let long2;
+  lat1 = obj[`${pos1}`].lat;
+
   let pos2 = cities.get(b);
   long2 = obj[`${pos2}`].long;
+  lat2 = obj[`${pos2}`].lat;
 
-  console.log(long1);
-  console.log(long2);
+  const R = 6371e3; // metres
+  const φ1 = (lat1 * Math.PI) / 180; // φ, λ in radians
+  const φ2 = (lat2 * Math.PI) / 180;
+  const Δφ = ((lat2 - lat1) * Math.PI) / 180;
+  const Δλ = ((long2 - long1) * Math.PI) / 180;
+
+  const af =
+    Math.sin(Δφ / 2) * Math.sin(Δφ / 2) +
+    Math.cos(φ1) * Math.cos(φ2) * Math.sin(Δλ / 2) * Math.sin(Δλ / 2);
+
+  const c = 2 * Math.atan2(Math.sqrt(af), Math.sqrt(1 - af));
+
+  const d = R * c;
+  console.log(d);
 }
 
-myFunction("Delhi", "Mumbai");
+function subFunc() {
+  event.preventDefault();
+  let nodeData = Array.from(document.querySelectorAll("input")).reduce(
+    (acc, input) => ({ ...acc, [input.id]: input.value }),
+    {}
+  );
+
+  myFunction(nodeData["city1"], nodeData["city2"]);
+}

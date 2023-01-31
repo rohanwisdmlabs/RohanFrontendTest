@@ -4,13 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <link href="styles.css" rel="stylesheet" />
     <title>Document</title>
   </head>
   <body>
-    <div class="container-data">
-      <div class="values"></div>
+    <div class="containers">
+      <img src="pexels-tim-durgan-4160396.jpg">
+      <div class="form" action="">
+        <form>
+          <label class="labels" for="name">Enter Your Name</label><br />
+          <input id="name"  type="text" />
+          <br />
+          <label class="labels" for="email">Enter Your Email</label><br />
+          <input id="email"  type="email" /><br />
+          <label class="labels" for="phone">Enter Your Phone No</label><br />
+          <input id="phone"  type="number" /><br />
+          <label class="labels" for="city1">Enter Your Starting City</label
+          ><br />
+          <input id="city1"  type="text" /><br />
+          <label class="labels" for="city2">Enter Your Destination City</label
+          ><br />
+          <input id="city2"  type="text" /><br />
+          <button class="btn-submit" onclick=subFunc() type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="show-data">
+        <h3 class="labels">From <span id="Jcity">Delhi</span></h1>
+          <h3 class="labels">From <span id="Dcity">Mumbai</span></h1>
+            <p class="paragraph" id="Dist">Distance : 3000km</p>
+            <p class="paragraph" id="Amt">Amount : 12000</p>
+      </div>
     </div>
+
     <script src="script1.js"></script>
   </body>
 </html>

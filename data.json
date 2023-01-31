@@ -1,76 +1,76 @@
 [
   {
     "city": "Delhi",
-    "long": 28.66,
-    "lat": 77.23
+    "lat": 28.66,
+    "long": 77.23
   },
   {
     "city": "Mumbai",
-    "long": 18.9667,
-    "lat": 72.8333
+    "lat": 18.9667,
+    "long": 72.8333
   },
   {
     "city": "Kolkata",
-    "long": 22.5411,
-    "lat": 88.3378
+    "lat": 22.5411,
+    "long": 88.3378
   },
   {
     "city": "Bangalore",
-    "long": 12.9699,
-    "lat": 77.598
+    "lat": 12.9699,
+    "long": 77.598
   },
   {
     "city": "Chennai",
-    "long": 13.0825,
-    "lat": 80.275
+    "lat": 13.0825,
+    "long": 80.275
   },
   {
     "city": "Hyderabad",
-    "long": 17.3667,
-    "lat": 78.4667
+    "lat": 17.3667,
+    "long": 78.4667
   },
   {
     "city": "Pune",
-    "long": 18.5196,
-    "lat": 73.8553
+    "lat": 18.5196,
+    "long": 73.8553
   },
   {
     "city": "Ahmedabad",
-    "long": 23.03,
-    "lat": 72.58
+    "lat": 23.03,
+    "long": 72.58
   },
   {
     "city": "Surat",
-    "long": 21.17,
-    "lat": 72.83
+    "lat": 21.17,
+    "long": 72.83
   },
 
   {
     "city": "Lucknow",
-    "long": 26.847,
-    "lat": 80.947
+    "lat": 26.847,
+    "long": 80.947
   },
   {
     "city": "Jaipur",
-    "long": 26.9167,
-    "lat": 75.8667
+    "lat": 26.9167,
+    "long": 75.8667
   },
   {
     "city": "Mirzapur",
-    "long": 25.15,
+    "lat": 25.15,
 
-    "lat": 82.58
+    "long": 82.58
   },
   {
     "city": "Nagpur",
-    "long": 21.1539,
+    "lat": 21.1539,
 
-    "lat": 79.0831
+    "long": 79.0831
   },
   {
     "city": "Ghaziabad",
-    "long": 28.6667,
+    "lat": 28.6667,
 
-    "lat": 77.4167
+    "long": 77.4167
   }
 ]
