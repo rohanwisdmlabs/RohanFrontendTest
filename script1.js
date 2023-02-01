@@ -27,6 +27,8 @@
 //   }
 // }
 
+const fixed_price = 20;
+
 const cities = new Map([
   ["Delhi", 0],
   ["Mumbai", 1],
@@ -45,6 +47,7 @@ const cities = new Map([
 ]);
 
 var obj1, obj2, long1, long2, lat1, lat2;
+let toggler = document.getElementById("pop-up");
 
 async function myFunction(a, b) {
   const value = await fetch("data.json");
@@ -60,7 +63,7 @@ async function myFunction(a, b) {
   long2 = obj[`${pos2}`].long;
   lat2 = obj[`${pos2}`].lat;
 
-  const R = 6371e3; // metres
+  const R = 6371; // metres
   const φ1 = (lat1 * Math.PI) / 180; // φ, λ in radians
   const φ2 = (lat2 * Math.PI) / 180;
   const Δφ = ((lat2 - lat1) * Math.PI) / 180;
@@ -72,7 +75,12 @@ async function myFunction(a, b) {
 
   const c = 2 * Math.atan2(Math.sqrt(af), Math.sqrt(1 - af));
 
-  const d = R * c;
+  const d = Math.round(R * c);
+  document.getElementById("Dist").innerHTML = d;
+  document.getElementById("Amt").innerHTML = d * fixed_price;
+  document.getElementById("Jcity").innerHTML = obj[`${pos1}`].city;
+  document.getElementById("Dcity").innerHTML = obj[`${pos2}`].city;
+
   console.log(d);
 }
 
@@ -85,3 +93,11 @@ function subFunc() {
 
   myFunction(nodeData["city1"], nodeData["city2"]);
 }
+
+let submit = document.querySelector(".btn-submit");
+
+submit.addEventListener("click", () => {
+  if (toggler.className == "show-data") toggler.className = "show-data-1";
+
+  subFunc();
+});
